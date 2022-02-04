@@ -1,0 +1,47 @@
+// compress: false, sourceMap: true
+
+// подключение файла с переменными
+@import "vars";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+// подключение стилей блока header
+@import "../css/blocks/header.less";
+
+// подключение стилей блока main
+@import "../css/blocks/main.less";
+
+// подключение стилей кнопок
+@import "../css/blocks/button.less";
+
+// подключение миксинов
+@import "mixins";
+
+// подключение стилей блока footer
+@import "../css/blocks/footer.less";
+
+/*! комментарий который останется после компиляции(компресии)*/
+/* ...а такой, только если отключена компрессия */
+// такой вообще не будет отображаться в файле .css

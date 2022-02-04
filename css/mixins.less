@@ -1,0 +1,17 @@
+// main: style.less
+
+.btn(@bgc) {
+    background-color: @bgc;
+    color: @secondary;
+
+    & when(lightness(@bgc) > 50) {
+        color: @black;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: darken(@bgc, 20%);
+        color: @secondary;
+    }
+}

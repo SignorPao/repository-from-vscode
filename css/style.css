@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mukta/v12/iJWKBXyXfDDVXYnG.ttf) format('truetype');
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.header {
+  background-color: #49bafc;
+  width: 100%;
+  padding: 30px;
+}
+@media (max-width: 420px) {
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+}
+.header .logo {
+  display: flex;
+  flex-direction: column;
+}
+.header .logo .logotype {
+  font-family: 'Poppins', sans-serif;
+  color: #fffce9;
+}
+.header .logo .logotype span::before {
+  content: '{';
+}
+.header .logo .logotype span::after {
+  content: '}';
+}
+.header .sub {
+  font-family: 'Mukta', sans-serif;
+}
+.main {
+  flex: 1  1 auto;
+  font-family: 'Mukta', sans-serif;
+  background-color: #fffce9;
+  padding: 30px;
+  background: url("../images/img-1.jpg") center center;
+}
+.main h2 {
+  color: rgba(21, 20, 24, 0.5);
+}
+@media (max-width: 420px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #151418;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s linear;
+}
+.btn:nth-child(3) {
+  margin: 0 0.5rem 0 0.5rem;
+}
+@media (max-width: 420px) {
+}
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #49bafc;
+  color: #151418;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  cursor: pointer;
+  background-color: #048cdb;
+  color: #fffce9;
+}
+.btn-secondary {
+  background-color: #151418;
+  color: #fffce9;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  cursor: pointer;
+  background-color: #464250;
+}
+.btn-mixin {
+  background-color: #b3b3b3;
+  color: #fffce9;
+  color: #151418;
+}
+.btn-mixin:hover,
+.btn-mixin:focus {
+  cursor: pointer;
+  background-color: #808080;
+  color: #fffce9;
+}
+.footer {
+  background-color: #151418;
+  color: #fffce9;
+  text-align: center;
+  padding: 30px;
+}
+@media (max-width: 420px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+/*! комментарий который останется после компиляции(компресии)*/
+/* ...а такой, только если отключена компрессия */
+/*# sourceMappingURL=./style.css.map */

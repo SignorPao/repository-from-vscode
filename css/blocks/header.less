@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.header {
+    background-color: @primary;
+    width: 100%;
+    padding: 30px;
+
+    @media @mobile {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        .logotype {
+            font-family: @font_one;
+            color: @secondary;
+
+            span::before {
+                content: '{';
+            }
+
+            span::after {
+                content: '}';
+            }
+        }
+    }
+
+    .sub {
+        font-family: @font_two;
+    }
+}
+

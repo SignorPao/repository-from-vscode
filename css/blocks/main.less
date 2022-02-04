@@ -1,0 +1,23 @@
+// main: ../style.less
+
+.main {
+    flex: 1  1 auto;
+    font-family: @font_two;
+    background-color: @secondary;
+    padding: 30px;
+    background: url("@{img}img-1.jpg") center center;
+
+    h2 {
+        color: fade(@black, 50%);
+    }
+
+    @media @mobile {
+        & {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+}
